@@ -33,7 +33,7 @@ body{
     justify-content: center;
 }
 
-.question-container {
+.questions-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -57,4 +57,37 @@ body{
 
 .next-question{
     margin-top: 32px;
+}
+
+.button{
+    background-color: #4863f7;
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 0;
+    border-radius: 6px;
+    height: 48px;
+    padding: 0 32px;
+    transition: filter 0.2s;
+}
+
+.button:not(:disabled):hover{
+    filter: brightness(0.8);
+}
+
+.hide{
+    display: none;
+}
+
+.answer:disabled{
+    cursor: not-allowed;
+
+}
+
+.correct{
+    background-color: rgb(46, 158, 46);
+}
+
+.incorrect{
+    background-color: red;
 }
