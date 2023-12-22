@@ -89,9 +89,9 @@ function resetState(){
      }
      $questionContainer.innerHTML = 
      `
-     <p>Você acertou ${totalCorrect} de ${totalQuestion}
+     <p class="finalMessage">Você acertou ${totalCorrect} de ${totalQuestion}
      <span>Resultado: ${message}</span></p>
-     <button onlick=window.location.reload>Refazer Quiz?</button>
+     <button class="finalResetBtn" onclick=window.location.reload()>Refazer Quiz?</button>
      `
     }
 
