@@ -113,3 +113,21 @@ body{
     padding: 0 32px;
     transition: filter 0.2s;
 }
+
+@media screen and (max-width: 384px) {
+    .answers-container{
+        grid-template-columns: none;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .button{
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 253px) {
+    .button{
+        height: 90px;
+    }
+}
